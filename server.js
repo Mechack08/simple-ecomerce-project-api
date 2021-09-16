@@ -15,7 +15,7 @@ mongoose
 app.use(express.json());
 
 app.use("/api/auth", userAuth);
-app.use("/api/user", userRoute);
+app.use("/api/users", userRoute);
 
 app.listen(process.env.PORT || 5500, () => {
   console.log("Listening on port " + process.env.PORT);
